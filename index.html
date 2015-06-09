@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端组件</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<div id="slider">
+    <div>
+        <a href="http://www.youzi100.com/"><img lazyload="imagesDEMO/slider/1.jpg"></a>
+        <p>1,让太阳把自己晒黑—小天</p>
+    </div>
+    <div>
+        <a href="http://www.youzi100.com/"><img lazyload="imagesDEMO/slider/2.jpg"></a>
+        <p>2,让太阳把自己晒黑—小天</p>
+    </div>
+    <div>
+        <a href="http://www.youzi100.com/"><img lazyload="imagesDEMO/slider/3.jpg"></a>
+        <p>3,让太阳把自己晒黑—小天</p>
+    </div>
+    <div>
+        <a href="http://www.youzi100.com/"><img lazyload="imagesDEMO/slider/4.jpg"></a>
+        <p>4,让太阳把自己晒黑—小天</p>
+    </div>
+</div>
+<script data-main="dist/common" src="dist/lib/require.js"></script>
+<script>
+    require(['slider'], function(Slider) {
+        console.log(Slider)
+    })
+</script>
+</body>
+</html>

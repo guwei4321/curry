@@ -1,0 +1,77 @@
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, input, textarea, select, button {
+  font-size: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 300;
+}
+
+small {
+  font-size: baseFontSize;
+}
+
+textarea, select, button {
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: 300;
+}
+
+address, cite, dfn, em, var, i {
+  font-style: normal;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+}
+a:active {
+  outline: 0;
+}
+a:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  word-break: break-all;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+legend {
+  color: #000;
+}

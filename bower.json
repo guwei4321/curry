@@ -1,0 +1,29 @@
+{
+  "name": "curry",
+  "version": "0.0.0",
+  "homepage": "https://github.com/guwei4321/curry",
+  "authors": [
+    "guwei"
+  ],
+  "description": "M端轻量级前端组件",
+  "main": [
+    "css",
+    "dist"
+  ],
+  "keywords": [
+    ""
+  ],
+  "ignore": [
+    "**/.*",
+    "doc",
+    "lib",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "Gruntfile.js",
+    "test"
+  ],
+  "dependencies": {
+    "zepto": ">=1.1.6"
+  }
+}

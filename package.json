@@ -1,0 +1,28 @@
+{
+    "name": "iverson",
+    "readmeFilename": "README.md",
+    "description": "pc端轻量级前端组件",
+    "homepage": "https://github.com/aui/artDialog",
+    "keywords": [
+        "dialog"
+    ],
+    "author": "guwei",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/guwei4321/iverson.git"
+    },
+    "main": "./src",
+    "dependencies": {
+        "jquery": "*"
+    },
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "load-grunt-tasks": "^0.2.0",
+        "grunt-contrib-clean": "^0.5.0",
+        "grunt-contrib-copy": "^0.5.0",
+        "grunt-contrib-compass": "^0.6.0",
+        "grunt-contrib-uglify": "^0.4.0",
+        "grunt-contrib-watch": "^0.5.2",
+        "grunt-contrib-requirejs": "^0.4.4"
+    }
+}
