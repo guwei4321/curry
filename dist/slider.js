@@ -6,7 +6,8 @@ define(['zepto'],function($) {
             index: 0,
             autoPlay: true,
             interval: 4000,
-            wrap: '.ui-slider'
+            classWrap: '.ui-slider',
+            classContainer: '.ui-slider-group'
         }, config)
     }
     $.extend(Slider.prototype, {
@@ -27,7 +28,7 @@ define(['zepto'],function($) {
         },
         _move: function(){
 
-        }
+        },
         _translate: function(){
 
         },
