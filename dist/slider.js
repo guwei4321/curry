@@ -29,63 +29,14 @@ define(['zepto'],function($) {
         _move: function(){
 
         },
-        _translate: function( index, dist, speed ){
-            var cssPrefix = $.fx.cssPrefix,
-                slide = this._items[ index ],
-                style = slide && slide.style;
-
-            if ( !style ) {
-                return false;
-            }
-
-            style.cssText += cssPrefix + 'transition-duration:' + speed +
-                    'ms;' + cssPrefix + 'transform: translate(' +
-                    dist + 'px, 0)' + translateZ + ';';
+        _translate: function(){
 
         },
-        _tansitionEnd: function(e){
-             if ( ~~e.target.getAttribute( 'data-index' ) !== this.index ) {
-                return;
-            }
+        _tansitionEnd: function(){
 
-            this.trigger( 'slideend', this.index );
         },
-        _slide: function(from, diff, dir, width, speed, opts){
-            var me = this,
-                to;
+        _slide: function(){
 
-            to = me._circle( from - dir * diff );
-
-            // 如果不是loop模式，以实际位置的方向为准
-            if ( !opts.loop ) {
-                dir = Math.abs( from - to ) / (from - to);
-            }
-
-            // 调整初始位置，如果已经在位置上不会重复处理
-            this._move( to, -dir * width, 0, true );
-
-            this._move( from, width * dir, speed );
-            this._move( to, 0, speed );
-
-            this.index = to;
-            return this.trigger( 'slide', to, from );
-        },
-        slideTo: function( to, speed ){
-            if ( this.index === to || this.index === this._circle( to ) ) {
-                return this;
-            }
-
-            var opts = this._options,
-                index = this.index,
-                diff = Math.abs( index - to ),
-
-                // 1向左，-1向右
-                dir = diff / (index - to),
-                width = this.width;
-
-            speed = speed || opts.speed;
-
-            return this._slide( index, diff, dir, width, speed, opts );
         },
         _resume: function(){
 
@@ -94,6 +45,9 @@ define(['zepto'],function($) {
 
         },
         _auto: function(){
+
+        },
+        slideTo: function(){
 
         },
         prev: function(){
