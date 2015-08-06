@@ -1,14 +1,13 @@
 .ui-slider {
     @at-root {
         &-item {
-            height: 148px;
             img {
                 background:#E7E7E7 url(about:blank) center center no-repeat;
             }
             a {
                 display: block;
                 text-decoration: none;
-                /*由于slide-item有3d属性，导致android上最后一个overflow:hidden无效，所以给子集也加个overflow:hidden;*/
+                //由于slide-item有3d属性，导致android上最后一个overflow:hidden无效，所以给子集也加个overflow:hidden;
                 width: 100%;
                 overflow: hidden;
             }

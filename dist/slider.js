@@ -6,12 +6,34 @@ define(['zepto'],function($) {
             index: 0,
             autoPlay: true,
             interval: 4000,
-            classWrap: '.ui-slider',
-            classContainer: '.ui-slider-group'
+            content: null,
+            classWrap: 'ui-slider',
+            classContainer: 'ui-slider-group',
+            classItem: 'ui-slider-item'
         }, config)
     }
     $.extend(Slider.prototype, {
-        create: function(){
+        setup: function(){
+            var _config = this.config;
+            this._initDom();
+        },
+        _initDom: function($el){
+            var _config = this.config,
+                $wrap = $('.' + _config.classWrap),
+                $container = $wrap.find('.' + _config.classContainer)
+
+            if ( $container.length === 0 ) {
+                $container = $('<div class="' + _config.classContainer + '"></div>');
+            }
+            if ( _config.content !== null ) {
+
+            } else if ( $wrap.children().length > 0 ) {
+                $container.append($wrap.children().addClass(_config.classItem))
+            }
+            $wrap.append($container);
+            // $wrap.children().addClass(_config.classItem)
+        },
+        _initEvent: function(){
 
         },
         // 根据 items 里面的数据决定是否插入到 containter 中
